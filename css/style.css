@@ -1,0 +1,199 @@
+/* Standaard font voor de hele pagina */
+body {
+    font-family: 'Teko', sans-serif; /* Teko font toegevoegd */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    transition: color 0.5s;
+    position: relative;
+    overflow: hidden; /* Geen scrollbars */
+}
+
+/* Achtergrond-container */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(closest-side, #000000, #ffffff); /* Dagmodus */
+    z-index: -1; /* Achter de content plaatsen */
+    transition: background 0.5s;
+}
+
+/* Nachtmodus - Omgekeerde gradient */
+.night-mode .background {
+    background: radial-gradient(closest-side, #ffffff, #000000); /* Nachtmodus */
+}
+
+.night-mode {
+    color: black;
+}
+
+/* Zijbalk (navigation menu) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 275px; /* Breedte van de zijbalk */
+    height: 100vh; /* Volledige hoogte van het scherm */
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+    z-index: 1; /* Zorgt ervoor dat de sidebar altijd boven de achtergrond staat */
+    text-align: left;
+}
+
+/* Profielfoto over de breedte van de navbar */
+.profile-image {
+    width: 100%; /* De afbeelding vult de breedte van de sidebar */
+    height: auto; /* De hoogte wordt automatisch aangepast om de verhoudingen te behouden */
+    object-fit: cover; /* Zorg ervoor dat de afbeelding niet vervormd raakt */
+    margin-bottom: 20px;
+}
+
+/* Functienaam onder de foto */
+.name {
+    font-family: 'Teko', sans-serif; /* Teko font voor de functienaam */
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-left: 20px; /* Padding aan de linkerkant */
+    padding-right: 20px; /* Padding aan de rechterkant */
+}
+
+.function {
+    font-family: 'Teko', sans-serif; /* Teko font voor de functienaam */
+    font-size: 24px;
+    color: #ccc; /* Lichtere kleur voor de functie */
+    margin-bottom: 30px;
+    padding-left: 20px; /* Padding aan de linkerkant */
+    padding-right: 20px; /* Padding aan de rechterkant */
+}
+
+/* Navigatie-menu */
+.menu a {
+    display: block; /* Stack links vertically */
+    margin-bottom: 10px; /* Add some spacing between links */
+    text-decoration: none; /* Optional: Remove underline */
+    color: inherit; /* Optional: Keep the text color consistent */
+    padding-left: 20px; /* Padding aan de linkerkant */
+    padding-right: 20px; /* Padding aan de rechterkant */
+    font-size: 32px;
+
+}
+
+/* Hover effect voor links */
+.menu a:hover {
+    background-color: #555;
+    
+}
+
+/* Knoppen-container */
+.switch-container {
+    position: absolute;
+    top: 20px; /* Adjust the vertical position as needed */
+    right: 20px; /* Push the buttons to the right side */
+    display: flex;
+    gap: 10px; /* Add spacing between the buttons */
+    
+}
+
+.switch {
+    padding: 10px 15px;
+    border: none;
+    
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+}
+
+.switch:hover {
+    background: #555;
+}
+
+#about {
+    position: absolute;
+    top: 100px; /* Adjust this value to move it closer to the top */
+    left: 400px; /* Add enough space to move it outside the sidebar */
+    font-size: 48px; /* Optional: Adjust font size if needed */
+    margin: 0; /* Remove default margin for precise positioning */
+    color: black;
+    font-weight: bold;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center; /* Center the boxes */
+    gap: 40px; /* Increase space between the two boxes */
+    margin: 20px auto; /* Center the container horizontally */
+    width: 60%; /* Allow the container to take up more space */
+    margin-left: 400px; /* Align with the sidebar */
+}
+
+.about-box {
+    background-color: #ccc; /* Light grey background */
+    padding: 40px; /* Increase padding for more content space */
+    width: 45%; /* Each box takes 45% of the container width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visuals */
+    text-align: left; /* Align text to the left inside the boxes */
+}
+
+.about-box h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.about-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around; /* Zorg voor gelijke ruimte tussen de icoontjes */
+    margin-top: 10px;
+}
+
+.socials a {
+    text-decoration: none; /* Verwijder onderstreping van links */
+}
+
+.socials img {
+    width: 70px; /* Pas de grootte van de icoontjes aan */
+    height: 70px;
+    object-fit: contain; /* Zorg dat de afbeeldingen niet vervormen */
+    transition: transform 0.2s; /* Voeg een hover-effect toe */
+}
+
+.socials img:hover {
+    transform: scale(1.2); /* Vergroot het icoon bij hover */
+}
+
+#projects {
+    position: absolute;
+   
+    left: 400px; /* Add enough space to move it outside the sidebar */
+    font-size: 48px; /* Optional: Adjust font size if needed */
+    margin: 0; /* Remove default margin for precise positioning */
+    margin-top: 400px; /* Adjust this value to move it closer to the top */
+    color: black;
+    font-weight: bold;
+}
+
