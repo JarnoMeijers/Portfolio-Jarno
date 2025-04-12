@@ -14,11 +14,15 @@ body {
 }
 
 html, body {
-    height: 150%;
+    height: 160%;
     margin: 0;
     font-family: 'Teko', sans-serif;
     color: white;
     position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .background {
@@ -32,13 +36,7 @@ html, body {
     transition: background 0.5s;
 }
 
-.night-mode .background {
-    background: radial-gradient(closest-side, #ffffff, #000000);
-}
 
-.night-mode {
-    color: black;
-}
 
 .sidebar {
     position: fixed;
@@ -102,23 +100,12 @@ html, body {
     gap: 10px;
 }
 
-.switch {
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
-    background-color: #333;
-    color: white;
-}
 
-.switch:hover {
-    background: #555;
-}
 
 h2 {
     position: relative;
     left: -20px;
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
     color: black;
     margin: 20px 0;
@@ -150,16 +137,17 @@ h2 {
 
 .about-box h3 {
     margin-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 36px;
     color: #333;
 }
 
 .about-box p {
-    font-size: 1rem;
+    font-size: 24px;
     color: #555;
 }
 
 .program-icons {
+    padding-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -223,7 +211,7 @@ h2 {
 
 .project-box h3 {
     margin: 10px 0;
-    font-size: 1.5rem;
+    font-size: 36px;
     color: #333;
 }
 
@@ -234,7 +222,7 @@ h2 {
     transform: translate(-50%, -50%);
     opacity: 0;
     color: white;
-    font-size: 1rem;
+    font-size: 24px;
     text-align: center;
     transition: opacity 0.3s ease;
     z-index: 2;
@@ -270,7 +258,7 @@ h2 {
 
 .skill-box h3 {
     margin-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 36px;
     color: #333;
 }
 
@@ -321,7 +309,7 @@ h2 {
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 24px;
     z-index: 10;
     transition: opacity 0.1s ease-in-out;
     pointer-events: none;
@@ -330,4 +318,105 @@ h2 {
 .tooltip:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
+}
+
+.project-box a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+header {
+    position: fixed;  /* Zorg ervoor dat de header bovenaan blijft */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Maak de header even breed als de pagina */
+    background-color: #444;  /* Nieuwe achtergrondkleur voor de header */
+    color: white;  /* De kleur van de tekst */
+    padding: 10px 20px;  /* Padding om ruimte rondom de knop te creëren */
+    z-index: 10;  /* Zorg ervoor dat de header boven andere elementen blijft */
+    display: flex;
+    align-items: center;
+}
+
+.home-button {
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: transparent;  /* Maak de achtergrond van de knop transparant */
+    border: 2px solid white;  /* Voeg een witte rand toe rondom de knop */
+    
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 0;  /* Zorg ervoor dat de knop aan de linkerkant blijft */
+}
+
+.home-button:hover {
+    background-color: white;  /* Verander de achtergrondkleur bij hover */
+    color: #555;  /* Verander de tekstkleur bij hover naar donkergrijs */
+}
+
+
+.box-section {
+    display: flex;
+    flex-direction: column; /* De boxen onder elkaar plaatsen */
+    justify-content: flex-start; /* Begin direct bovenaan */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 0; /* Verwijdert de marge boven de box-sectie */
+    margin-bottom: 0;
+}
+
+/* Styling voor elke box */
+.box {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 80%;  /* Breedte kan aangepast worden */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    flex-direction: row; /* Afbeelding en tekst naast elkaar */
+}
+
+/* Styling voor de afbeelding in de box */
+.box-image {
+    width: 150px; /* Pas de breedte aan naar wens */
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Styling voor de inhoud van de box (h3 en p) */
+.box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Zorgt ervoor dat de tekst de rest van de ruimte opvult */
+}
+
+/* Styling voor de titel in de box */
+.box-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styling voor de beschrijving in de box */
+.box-description {
+    font-size: 24px;
+    color: #555;
+    text-align: left;
+}
+
+/* Hover effect voor de boxen */
+.box:hover {
+    transform: scale(1.05); /* Verhoogt de grootte van de box bij hover */
 }
