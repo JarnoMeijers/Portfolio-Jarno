@@ -4,70 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
     <title>Document</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-    <div class="background"></div> <!-- Achtergrond apart maken -->
-
-    <!-- Navigatie menu aan de linkerkant -->
-    <div class="sidebar">
-        <img src="assets/foto-jarno1.png" alt="Mijn Foto" class="profile-image">
-        <h1 class="name">Jarno Meijers</h1>
-        <p class="function">Communication and Multimedia <br> Design student</p>
-        <div class="menu">
-            <a href="#about-me">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-        </div>
-    </div>
-
+<Header>
+    <div class="background"></div>
     <div class="switch-container">
         <button id="modeSwitch" class="switch">🌞</button>
         <button id="langSwitch" class="switch">Nederlands</button>
     </div>
+</Header>
 
-    <h2 id="about">Over mij</h2>
+<div class="sidebar">
+    <img src="assets/foto-jarno1.png" alt="Mijn Foto" class="profile-image">
+    <h1 class="name">Jarno Meijers</h1>
+    <p class="function">Communication and Multimedia <br> Design student</p>
+    <div class="menu">
+        <a href="#about-me">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+    </div>
+</div>
 
-    <div class="about-container">
-        
+<section class="about-me-sec">
+    <h2>Over mij</h2>
+    <div class="about-me">
         <div class="about-box">
             <h3>Dit ben ik</h3>
             <p>
-                Hi! Ik ben een tweedejaars student Communication and Multimedia Design aan Zuyd Hogeschool in
-                Maastricht. Mijn passie ligt bij 2D animatie — ik vind het geweldig om verhalen tot leven te brengen met
-                beeld en beweging. Ik werk graag aan creatieve projecten waarin ik mijn illustratie- en
-                animatievaardigheden kan inzetten om ideeën visueel te vertellen.
+                Hi! I am a Communication and Multimedia Design student with a passion for creativity and technology.
+                I enjoy working on projects that involve design, animation, and user experience.
             </p>
         </div>
         <div class="about-box">
             <h3>Socials</h3>
-            <div class="socials">
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="assets/instagram-icon.jpg" alt="Instagram">
-                </a>
-                <a href="https://www.linkedin.com" target="_blank">
-                    <img src="assets/linkedin-icon.png" alt="LinkedIn">
-                </a>
+            <div class="program-icons">
+                <div class="tooltip"><img src="assets/instagram-icon.jpg" alt="Instagram"><span class="tooltip-text">Instagram</span></div>
+                <div class="tooltip"><img src="assets/linkedin-icon.png" alt="LinkedIn"><span class="tooltip-text">LinkedIn</span></div>
+                <div class="tooltip"><img src="assets/deviantart-icon.png" alt="DeviantArt"><span class="tooltip-text">DeviantArt</span></div>
             </div>
         </div>
     </div>
-    
-        <h2 id="projects">Projects</h2>
-        
+</section>
 
+<section class="projects-sec">
+    <h2>Projecten</h2>
+    <div class="projects">
+        <div class="project-box">
+            <img src="assets/ludicolo.png" alt="Animation">
+            <h3>Animation</h3>
+            <p>Creating engaging animations to bring stories to life.</p>
+        </div>
+        <div class="project-box">
+            <img src="assets/story.png" alt="Storytelling">
+            <h3>Storytelling</h3>
+            <p>Crafting compelling narratives through creative design.</p>
+        </div>
+        <div class="project-box">
+            <img src="assets/absol.jpg" alt="Illustration">
+            <h3>Illustration</h3>
+            <p>Designing unique illustrations to visualize ideas.</p>
+        </div>
+    </div>
+</section>
 
+<section class="skills-sec">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill-box">
+            <h3>Programma's die ik ken</h3>
+            <div class="program-icons">
+                <div class="tooltip"><img src="assets/an-image.png" alt="Adobe Animate"><span class="tooltip-text">Adobe Animate</span></div>
+                <div class="tooltip"><img src="assets/csp-image.png" alt="Clip Studio Paint"><span class="tooltip-text">Clip Studio Paint</span></div>
+                <div class="tooltip"><img src="assets/pr-image.png" alt="Adobe Premiere"><span class="tooltip-text">Premiere Pro</span></div>
+                <div class="tooltip"><img src="assets/ae-image.png" alt="After Effects"><span class="tooltip-text">After Effects</span></div>
+                <div class="tooltip"><img src="assets/blender.png" alt="Blender"><span class="tooltip-text">Blender</span></div>
+                <div class="tooltip"><img src="assets/ai-image.png" alt="Adobe Illustrator"><span class="tooltip-text">Illustrator</span></div>
+                <div class="tooltip"><img src="assets/figma.png" alt="Figma"><span class="tooltip-text">Figma</span></div>
+                <div class="tooltip"><img src="assets/ps-image.png" alt="Adobe Photoshop"><span class="tooltip-text">Photoshop</span></div>
+                <div class="tooltip"><img src="assets/visual-studio-code.png" alt="Visual Studio Code"><span class="tooltip-text">VS Code</span></div>
+                <div class="tooltip"><img src="assets/github.png" alt="GitHub"><span class="tooltip-text">GitHub</span></div>
+                <div class="tooltip"><img src="assets/id-image.png" alt="InDesign"><span class="tooltip-text">InDesign</span></div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 
