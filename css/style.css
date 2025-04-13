@@ -1,20 +1,12 @@
 body {
     font-family: 'Teko', sans-serif;
-    height: 100vh;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     color: white;
-    transition: color 0.5s;
-    position: relative;
     overflow-x: hidden;
 }
 
 html, body {
-    height: 160%;
+    
     margin: 0;
     font-family: 'Teko', sans-serif;
     color: white;
@@ -195,7 +187,7 @@ h2 {
     height: 100%;
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.3s ease;
-    z-index: 1;
+    pointer-events: none;
 }
 
 .project-box:hover::after {
@@ -362,6 +354,50 @@ header {
 }
 
 
+header {
+    display: flex;
+    justify-content: flex-start; /* Zorg dat de knoppen links uitlijnen */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Donkere achtergrondkleur */
+    color: white;
+    
+}
+
+header a {
+    text-decoration: none; /* Verwijder onderstreping van links */
+    color: white;
+    font-size: 18px;
+    margin-right: 20px; /* Ruimte tussen de knoppen */
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #555; /* Knopachtergrondkleur */
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #777; /* Hover-effect voor knoppen */
+}
+
+.home-button,
+.back-button {
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: transparent; /* Maak de achtergrond van de knop transparant */
+    border: 2px solid white; /* Voeg een witte rand toe rondom de knop */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 0; /* Zorg ervoor dat de knop aan de linkerkant blijft */
+}
+
+.home-button:hover,
+.back-button:hover {
+    background-color: white; /* Verander de achtergrondkleur bij hover */
+    color: #555; /* Verander de tekstkleur bij hover naar donkergrijs */
+}
+
 .box-section {
     display: flex;
     flex-direction: column; /* De boxen onder elkaar plaatsen */
@@ -371,6 +407,7 @@ header {
     padding: 20px;
     margin-top: 0; /* Verwijdert de marge boven de box-sectie */
     margin-bottom: 0;
+    margin-top: 80px;
 }
 
 /* Styling voor elke box */
@@ -379,7 +416,7 @@ header {
     align-items: center;
     background-color: #f4f4f4;
     padding: 20px;
-    width: 80%;  /* Breedte kan aangepast worden */
+    width: 50%;  /* Breedte kan aangepast worden */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     flex-direction: row; /* Afbeelding en tekst naast elkaar */
@@ -419,4 +456,156 @@ header {
 /* Hover effect voor de boxen */
 .box:hover {
     transform: scale(1.05); /* Verhoogt de grootte van de box bij hover */
+}
+
+.box-link {
+    display: flex;
+    flex-direction: row; /* Zorg ervoor dat de afbeelding en tekst naast elkaar blijven */
+    text-decoration: none; /* Verwijder de standaard onderstreping van links */
+    color: inherit; /* Zorg ervoor dat de tekstkleur behouden blijft */
+    width: 100%; /* Zorg dat de link de hele box bedekt */
+    height: 100%; /* Zorg dat de link de hele box bedekt */
+}
+
+.box-link:hover {
+    transform: scale(1.05); /* Zorg dat de hover-effecten werken */
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between; /* Plaats de box en GIF naast elkaar */
+    align-items: flex-start; /* Zorg dat ze bovenaan uitlijnen */
+    gap: 20px; /* Ruimte tussen de box en de GIF */
+    padding: 20px;
+    margin-top: 100px; /* Zorg dat de inhoud niet overlapt met de header */
+}
+
+.left-box {
+    background-color: #f4f4f4; /* Lichtgrijze achtergrond */
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 120px; /* Ruimte aan de linkerkant */
+    width: 31%; /* Breedte van de box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionele schaduw */
+    margin-top: 40px;
+    text-align: left;
+}
+
+.left-box h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.left-box p {
+    font-size: 24px;
+    color: #555;
+
+}
+
+.right-gif {
+    width: 45%; /* Breedte van de GIF-container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px; /* Ruimte aan de rechterkant */
+}
+
+.gif-image {
+    width: 100%; /* Zorg dat de GIF de container vult */
+    height: auto;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionele schaduw */
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between; /* Plaats de elementen naast elkaar */
+    align-items: flex-start; /* Zorg dat ze bovenaan uitlijnen */
+    gap: 20px; /* Ruimte tussen de elementen */
+    padding: 20px;
+    margin-top: 40px; /* Voeg ruimte toe tussen secties */
+}
+
+.left-gif,
+.right-image {
+    width: 45%; /* Beide elementen nemen 45% van de breedte in */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif-image,
+.image {
+    width: 80%; /* Zorg dat de afbeelding of GIF de container vult */
+    height: auto;
+    margin-top: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionele schaduw */
+}
+
+.right-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-right: 60px; /* Ruimte aan de rechterkant */
+}
+
+.left-gif {
+    width: 45%; /* Breedte van de GIF-container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px; /* Ruimte aan de linkerkant */
+}
+
+.single-box {
+    background-color: #f4f4f4; /* Lichtgrijze achtergrond */
+    padding: 20px 40px; /* Voeg interne ruimte toe */
+    margin: 20px auto; /* Center de box en voeg ruimte boven en onder toe */
+    width: 50%; /* Breedte van de box */
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionele schaduw */
+    text-align: center; /* Centreer de tekst */
+}
+
+.single-box p {
+    font-size: 24px;
+    color: #555; /* Donkergrijze tekstkleur */
+   
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Centreer de video horizontaal */
+    margin: 20px auto; /* Voeg ruimte boven en onder toe */
+    width: 80%; /* Beperk de breedte van de video-container */
+    background-color: #f4f4f4;
+}
+
+.video-container iframe {
+    width: 100%; /* Zorg dat de video de volledige breedte van de container vult */
+    height: 500px; /* Stel een vaste hoogte in voor de video */
+   
+    
+    
+}
+
+.photo-section {
+    display: flex;
+    justify-content: center; /* Centreer de foto horizontaal */
+    align-items: center; /* Centreer de foto verticaal */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+
+.photo-image {
+    margin-top: 60px;
+    margin-left: 60px;
+    width: 40%; /* Zorg dat de foto de container volledig vult */
+    height: auto;
+    display: block;
 }
