@@ -3,11 +3,13 @@ body {
     margin: 0;
     color: white;
     overflow-x: hidden;
+    max-width: 1920px;
+    margin: 0 auto; /* Center de pagina */
 }
 
 html, body {
     
-    margin: 0;
+    
     font-family: 'Teko', sans-serif;
     color: white;
     position: relative;
@@ -370,7 +372,6 @@ header a {
     font-size: 18px;
     margin-right: 20px; /* Ruimte tussen de knoppen */
     padding: 10px 15px;
-    border-radius: 5px;
     background-color: #555; /* Knopachtergrondkleur */
     transition: background-color 0.3s ease;
 }
@@ -608,4 +609,13 @@ header a:hover {
     width: 40%; /* Zorg dat de foto de container volledig vult */
     height: auto;
     display: block;
+}
+
+.divider {
+    border: none; /* Verwijder de standaard rand */
+    border-top: 2px solid black; /* Voeg een zwarte streep toe */
+    margin: 20px 0; /* Voeg ruimte boven en onder de streep toe */
+    width: 80%; /* Beperk de breedte van de streep */
+    margin-left: auto; /* Centreer de streep */
+    margin-right: auto;
 }
