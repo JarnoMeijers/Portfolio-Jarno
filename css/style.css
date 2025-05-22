@@ -126,7 +126,7 @@ h2 {
     padding: 40px;
     width: 40%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    
 }
 
 .about-box h3 {
@@ -723,5 +723,30 @@ header a:hover {
     }
     body {
         overflow-x: hidden;
+    }
+}
+
+
+@media all and (max-width: 850px) {
+   .projects{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   }
+   .about-me{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   }
+   
+
+    .content-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .gallery-row {
+        flex-direction: column;
+        align-items: center;
     }
 }
