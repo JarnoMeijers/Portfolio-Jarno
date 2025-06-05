@@ -278,6 +278,7 @@ h2 {
 
 .about-me-sec,
 .projects-sec,
+.school-projecten-sec,
 .skills-sec {
     margin-left: 275px;
     padding: 20px;
@@ -686,6 +687,17 @@ header a:hover {
     transition: all 0.3s;
 }
 
+.gallery-image2 {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+    background: #f4f4f4;
+}
+
+
+
 /* Responsive styles */
 @media all and (max-width: 900px) {
     .sidebar {
@@ -707,6 +719,7 @@ header a:hover {
     }
     .about-me-sec,
     .projects-sec,
+    .school-projecten-sec
     .skills-sec {
         margin-left: 0;
         width: 100%;
