@@ -45,8 +45,8 @@ header {
     font-family: "Futura PT", Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
-.nav-links a:hover {
-    color: #6f42c1;
+.nav-links > li > a:hover {
+    color: #8B0000; /* jouw rood */
 }
 
 h2 {
@@ -416,7 +416,6 @@ body.illustraties .hero {
 .skills-right img {
     width: 100%;
     max-width: 400px;
-    border: 3px solid #000;
 }
 
 .skill img {
@@ -699,4 +698,107 @@ body.illustraties .hero {
    
     
     
+}
+
+/* Algemene terugknop */
+.back-button {
+    display: inline-block;
+    margin: 2rem 0 0 2rem;
+    padding: 0.8rem 1.4rem;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-family: "Futura PT", Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 999px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.back-button:hover {
+    transform: translateY(-3px);
+    background-color: #f5f5f5;
+}
+
+/* Speciaal voor eigen.html en school.html */
+.back-button-row {
+    max-width: 1000px;
+    margin: 2rem auto 0;
+    padding: 0 2rem;
+}
+
+.back-button.under-hero {
+    margin: 0 0 1rem 0;
+}
+
+#about,
+#projects,
+#skills {
+    scroll-margin-top: 140px;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0.8rem 0;
+    min-width: 240px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+    z-index: 999;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.8rem 1.2rem;
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+    font-family: "Futura PT", Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+    color: #6f42c1;
+}
+
+/* Hover active */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* School = oranje */
+.dropdown-menu .school-link:hover {
+    color: #ffb346;
+}
+
+/* Eigen = blauw */
+.dropdown-menu .eigen-link:hover {
+    color: #8fd1ff;
+}
+
+/* Illustraties = groen */
+.dropdown-menu .illustraties-link:hover {
+    color: #90db86;
 }

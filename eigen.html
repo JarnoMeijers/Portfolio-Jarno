@@ -20,14 +20,26 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html#about">Over mij</a></li>
-                <li><a href="index.html#projects">Projecten</a></li>
+                <li class="dropdown">
+                    <a href="index.html#projects">Projecten</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="school.html" class="school-link">School projecten</a></li>
+                        <li><a href="eigen.html" class="eigen-link">Eigen projecten</a></li>
+                        <li><a href="illustraties.html" class="illustraties-link">Illustraties</a></li>
+                    </ul>
+                </li>
                 <li><a href="index.html#skills">Mijn skills</a></li>
             </ul>
+
         </nav>
     </header>
 
     <!-- HERO -->
     <section class="hero"></section>
+
+    <div class="back-button-row">
+        <a href="index.html" class="back-button under-hero">← Terug</a>
+    </div>
 
     <!-- PROJECT LIJST -->
     <section class="my-projects">
@@ -56,7 +68,7 @@
                     <p>Hier deel ik het design procces van mijn website</p>
                 </div>
             </a>
-                        <!-- Project 3 -->
+            <!-- Project 3 -->
             <a href="groeibuddy.html" class="project-row">
                 <img src="assets/groeibuddy-banner.png" alt="">
                 <div class="project-info">

@@ -20,11 +20,20 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html#about">Over mij</a></li>
-                <li><a href="index.html#projects">Projecten</a></li>
+                <li class="dropdown">
+                    <a href="index.html#projects">Projecten</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="school.html" class="school-link">School projecten</a></li>
+                        <li><a href="eigen.html" class="eigen-link">Eigen projecten</a></li>
+                        <li><a href="illustraties.html" class="illustraties-link">Illustraties</a></li>
+                    </ul>
+                </li>
                 <li><a href="index.html#skills">Mijn skills</a></li>
             </ul>
         </nav>
     </header>
+
+    <a href="javascript:history.back()" class="back-button">← Terug</a>
 
     <main>
         <section class="about museum-about" id="museum">
@@ -46,17 +55,15 @@
             </div>
         </section>
 
-    <section class="content-section">
-        <div class="video-container">
-            <iframe src="https://player.vimeo.com/progressive_redirect/playback/1075110237/rendition/1080p/file.mp4?loc=external&signature=db11c9b79154bc2443fbf8b75e4072ac7aca5d48d4a45654e012929acbfde7e7" 
-                    width="640" 
-                    height="360" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture" 
+        <section class="content-section">
+            <div class="video-container">
+                <iframe
+                    src="https://player.vimeo.com/progressive_redirect/playback/1075110237/rendition/1080p/file.mp4?loc=external&signature=db11c9b79154bc2443fbf8b75e4072ac7aca5d48d4a45654e012929acbfde7e7"
+                    width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
                     allowfullscreen>
-            </iframe>
-        </div>
-    </section>
+                </iframe>
+            </div>
+        </section>
 
     </main>
 
