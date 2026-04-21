@@ -1,0 +1,702 @@
+/* Header and Navigation */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.logo img {
+    width: 300px;
+    height: 100px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    font-size: 32px;
+    font-family: "Futura PT", Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.nav-links a:hover {
+    color: #6f42c1;
+}
+
+h2 {
+    font-family: "Futura PT", Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+/* Body */
+body {
+    background-color: #fff;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body.eigen {
+    background-color: #8fd1ff;
+}
+
+body.school {
+    background-color: #ffb346;
+}
+
+body.illustraties {
+    background-color: #90db86;
+}
+
+p {
+    font-family: 'Karla', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Hero section */
+.hero {
+    height: 300px;
+    /* bepaal hoe hoog je banner is */
+    background-image: url("../assets/mega-absol.png");
+    background-size: cover;
+    /* vult de hele breedte */
+    background-position: center top;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+}
+
+body.eigen .hero {
+    background-image: url("../assets/dustox.png");
+}
+
+body.school .hero {
+    background-image: url("../assets/dustox.png");
+    background-position: center 40%;
+}
+
+body.illustraties .hero {
+    background-image: url("../assets/dustox.png");
+}
+
+/* About section */
+.about {
+    padding: 4rem 2rem;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.museum-note {
+    max-width: 900px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.museum-note p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Linkerkant (tekst) */
+.about-text {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+/* Social icons */
+.about-text h3 {
+    font-family: "Futura PT", Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.socials img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Rechterkant (afbeelding) */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.image-row {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.image-row img {
+    width: calc((100% - 3rem) / 3);
+    max-width: 320px;
+    height: auto;
+}
+
+.center-section {
+    max-width: 900px;
+    margin: 3rem auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.center-note {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.center-note h2 {
+    margin-bottom: 1rem;
+}
+
+.center-note p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.center-image img {
+    width: 100%;
+    max-width: 400px;
+    
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Grid */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card */
+.project-card {
+    width: 300px;
+    text-decoration: none;
+    background: #fff;
+    display: block;
+    border-radius: 30px;
+}
+
+/* Image gedeelte */
+.project-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.overlay span {
+    color: #fff;
+    font-size: 18px;
+    opacity: 0;
+    transition: 0.3s;
+    font-family: "Futura PT", Futura, sans-serif;
+}
+
+/* Hover */
+.project-image:hover .overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.project-image:hover .overlay span {
+    opacity: 1;
+}
+
+/* Onderkant card */
+.project-content {
+    padding: 1.5rem;
+    text-align: center;
+    color: #000;
+}
+
+.project-content p {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.project-content img {
+    width: 60px;
+    height: 60px;
+}
+
+.projects {
+    background-color: #8B0000;
+    padding: 4rem 2rem;
+    text-align: center;
+    /* dit fixt meteen je H2 */
+    color: #fff;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-card {
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills section */
+.skills {
+    background-color: #fff;
+    padding: 4rem 2rem;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Layout */
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* Links */
+.skills-left {
+    flex: 1;
+}
+
+.skills-left h3 {
+    font-size: 24px;
+    margin-bottom: 2rem;
+}
+
+/* Grid icons */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 2rem;
+}
+
+/* Skill item */
+.skill {
+    position: relative;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+    white-space: nowrap;
+}
+
+/* Hover effect */
+.skill:hover .tooltip {
+    opacity: 1;
+}
+
+/* Rechts (gif) */
+.skills-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-right img {
+    width: 100%;
+    max-width: 400px;
+    border: 3px solid #000;
+}
+
+.skill img {
+    transition: transform 0.2s ease;
+}
+
+.skill:hover img {
+    transform: scale(1.1);
+}
+
+/* Sectie achtergrond */
+.school-projects {
+    background-color: #ffb346;
+    /* oranje zoals screenshot */
+    padding: 4rem 2rem;
+}
+
+/* Container */
+.project-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.featured-project,
+.other-projects-intro {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.featured-project {
+    margin-bottom: 3rem;
+}
+
+.featured-card {
+    display: block;
+    background: #fff;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px);
+}
+
+.featured-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-content {
+    padding: 1.5rem 1.5rem 2rem;
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.featured-content h3 {
+    font-family: "Futura PT", Futura, sans-serif;
+    margin-bottom: 0.5rem;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.featured-content p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 680px;
+}
+
+.other-projects-intro {
+    text-align: center;
+    margin: 2rem auto 0;
+    padding-bottom: 2rem;
+}
+
+.other-projects-intro h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.project-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+/* Rij */
+.project-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+    border-radius: 30px;
+}
+
+/* Hover effect */
+.project-row:hover {
+    transform: translateY(-5px);
+}
+
+/* Afbeelding */
+.project-row img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* Tekst */
+.project-info h3 {
+    font-family: "Futura PT", Futura, sans-serif;
+    margin-bottom: 0.5rem;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.project-info p {
+    font-size: 20px;
+}
+
+
+.my-projects {
+    background-color: #8fd1ff;
+    /* oranje zoals screenshot */
+    padding: 4rem 2rem;
+}
+
+.featured-project,
+.other-projects-intro {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.featured-project {
+    margin-bottom: 3rem;
+}
+
+.featured-card {
+    display: block;
+    background: #fff;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px);
+}
+
+.featured-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-content {
+    padding: 1.5rem 1.5rem 2rem;
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.featured-content h3 {
+    font-family: "Futura PT", Futura, sans-serif;
+    margin-bottom: 0.5rem;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.featured-content p {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 auto;
+    max-width: 680px;
+}
+
+.other-projects-intro {
+    text-align: center;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
+}
+
+.other-projects-intro h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.project-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+/* Illustraties - Intro section */
+.illustration-intro {
+    padding: 4rem 2rem;
+    background-color: #fff;
+}
+
+.intro-box {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-box h3 {
+    font-family: "Futura PT", Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 1rem;
+
+}
+
+.intro-box p {
+    font-family: 'Karla', Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* Illustraties - Galerie section */
+.illustrations-gallery {
+    padding: 4rem 2rem;
+}
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Centreer de video horizontaal */
+    margin: 20px auto; /* Voeg ruimte boven en onder toe */
+    width: 80%; /* Beperk de breedte van de video-container */
+    background-color: #f4f4f4;
+
+}
+
+.video-container iframe {
+    width: 100%; /* Zorg dat de video de volledige breedte van de container vult */
+    height: 500px; /* Stel een vaste hoogte in voor de video */
+   
+    
+    
+}
