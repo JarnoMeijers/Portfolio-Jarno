@@ -399,6 +399,7 @@ body.illustraties .hero {
     pointer-events: none;
     transition: 0.2s;
     white-space: nowrap;
+    z-index: 9999;
 }
 
 /* Hover effect */
@@ -801,4 +802,283 @@ body.illustraties .hero {
 /* Illustraties = groen */
 .dropdown-menu .illustraties-link:hover {
     color: #90db86;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .logo img {
+        width: 220px;
+        height: auto;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 24px;
+    }
+
+    .about-container,
+    .skills-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img,
+    .skills-right img {
+        max-width: 350px;
+    }
+
+    .project-grid {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .project-card {
+        width: 280px;
+    }
+
+    .project-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-row img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .image-row img {
+        width: calc((100% - 1.5rem) / 2);
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    .video-container iframe {
+        height: 400px;
+    }
+}
+
+/* =========================
+   MOBIEL
+========================= */
+@media (max-width: 768px) {
+    header {
+        position: static;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .nav-links a {
+        font-size: 22px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: transparent;
+        padding: 0.5rem 0 0 0;
+        min-width: unset;
+    }
+
+    .dropdown-menu a {
+        font-size: 18px;
+        padding: 0.4rem 0;
+    }
+
+    .hero {
+        height: 180px;
+        background-position: center;
+    }
+
+    .about,
+    .projects,
+    .skills,
+    .school-projects,
+    .my-projects,
+    .illustration-intro,
+    .illustrations-gallery {
+        padding: 2rem 1rem;
+    }
+
+    .about-container,
+    .skills-container,
+    .center-section {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-text,
+    .center-note {
+        padding: 1.5rem;
+    }
+
+    .about-text h2,
+    .projects h2,
+    .skills h2,
+    .other-projects-intro h2,
+    h2 {
+        font-size: 30px;
+    }
+
+    .about-text h3 {
+        font-size: 24px;
+    }
+
+    p,
+    .center-note p,
+    .museum-note p,
+    .project-info p,
+    .featured-content p,
+    .intro-box p {
+        font-size: 18px;
+    }
+
+    .project-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .featured-card,
+    .project-row {
+        border-radius: 20px;
+    }
+
+    .project-row {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .project-info h3 {
+        font-size: 26px;
+    }
+
+    .featured-content h3 {
+        font-size: 24px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 80px);
+        justify-content: center;
+    }
+
+    .skills-left h3 {
+        text-align: center;
+    }
+
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-row img {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image img,
+    .center-image img,
+    .skills-right img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .museum-note {
+        margin: 2rem 1rem 0;
+        padding: 1.5rem;
+    }
+
+    .back-button {
+        margin: 1rem;
+        font-size: 18px;
+        padding: 0.7rem 1.2rem;
+    }
+
+    .back-button-row {
+        padding: 0 1rem;
+        margin-top: 1rem;
+    }
+
+    .video-container iframe {
+        height: 220px;
+    }
+}
+
+/* =========================
+   KLEINE MOBIELEN
+========================= */
+@media (max-width: 480px) {
+    .logo img {
+        width: 150px;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+
+    h2,
+    .about-text h2,
+    .projects h2,
+    .skills h2 {
+        font-size: 26px;
+    }
+
+    p,
+    .center-note p,
+    .museum-note p,
+    .project-info p,
+    .featured-content p {
+        font-size: 16px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 70px);
+        gap: 1.2rem;
+    }
+
+    .skill img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .video-container iframe {
+        height: 200px;
+    }
 }
